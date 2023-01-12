@@ -1,0 +1,1 @@
+Api client for https://jsonplaceholder.typicode.com which implements  builder/command/composite patterns and using ABCMeta
