@@ -1,8 +1,6 @@
 from abc import ABCMeta, abstractmethod
-
 from autologging import logged
-
-from rest.command import ApiService
+from rest.ApiClient import ApiService
 
 
 @logged

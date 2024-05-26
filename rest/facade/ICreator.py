@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import List
 
-from rest.command.ApiService import ApiService
+from rest.ApiClient import ApiService
 from rest.command.IRestRequest import IRestRequest
 
 
@@ -20,12 +20,12 @@ class ICreator(metaclass=ABCMeta):
     @staticmethod
     @abstractmethod
     def create_random(self):
-        " A method each creator should implement. Creates obj with random values"
+        """A method each creator should implement. Creates obj with random values"""
 
     @staticmethod
     @abstractmethod
     def delete(self):
-        " A method each Creator should implement. Deletes current obj."
+        """ A method each Creator should implement. Deletes current obj."""
 
     def delete_with_dependencies(self):
         for dep in self.dependencies:

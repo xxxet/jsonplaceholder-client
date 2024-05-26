@@ -1,9 +1,9 @@
-from rest.command.ApiService import ApiService
+from rest.ApiClient import ApiService
 from rest.command.DeleteRequest import DeleteRequest
 from rest.command.PostRequest import PostRequest
-from rest.command.composite.ICreator import ICreator
-from rest.command.composite.UserCreator import UserCreator
-from rest.command.model.PostModel import PostModel
+from rest.facade.ICreator import ICreator
+from rest.facade.UserFacade import UserCreator
+from rest.model.PostModel import PostModel
 
 
 class PostCreator(ICreator):
